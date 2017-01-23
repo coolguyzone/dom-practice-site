@@ -5,6 +5,16 @@
     <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="#">firstLink</a></li>
+        <li><a href="#">secondLink</a></li>
+        <li><a href="#">thirdLink</a></li>
+        <li><a href="#">forthLink</a></li>
+        <li><a href="#">fifthLink</a></li>
+      </ul>
+    </nav>
+    <span>Above is the nav bar, style it up! Feel free to delete this span and others that start with Below, or Above along the way.</span>
     <header>
       <h2>
         WELCOME to DOM BASICS!
@@ -15,6 +25,7 @@
         <p class="first-paragraph">
           This is an example of some text. It is inside a p tag with the class of "first-paragraph". It has a parent with an id of "top"
         </p>
+        <span>Below is an unordered list with list items, use Materialize to equally space out the items and have the list take up only 1/2 the page.</span>
         <ul>
           <li>
             first list item
@@ -33,14 +44,40 @@
           </li>
         </ul>
       </div>
+      <div class="middle">
+        <span>Below is a form. Use Materialize to add style and prefix icons to the form items</span>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <br />
+          <input type="text" name="name" id="" value="" placeholder="Enter your name!"/>
+          <br />
+          <label for="write-area">Write us something here</label>
+          <br />
+          <textarea name="write-area" id="" rows="8" cols="40" placeholder="your thoughts?"></textarea>
+          <br />
+          <label for="age">Choose your age range!</label>
+          <br />
+          <input type="radio" name="age" id="" value="0-18" />0-18
+          <br />
+          <input type="radio" name="age" id="" value="19-36" />19-36
+          <br />
+          <input type="radio" name="age" id="" value="37-54" />37-54
+          <br />
+          <input type="radio" name="age" id="" value="55-88+" />55-88+
+          <br />
+          <button type="submit">submit button!</button>
+          <button type="cancel">cancel button!</button>
+        </form>
+      </div>
       <div id="bottom">
         <p>
-          this is the first p child in the div with id "bottom".
+          This is the first p child in the div with id "bottom". Lay it out to take up the right 1/3 of the container.
         </p>
         <p>
+          This is the middle p child, lay it out to take up the middle 1/6 of the container.
         </p>
         <p>
-          This is the last p child in the div with id "bottom".
+          This is the last p child in the div with id "bottom". Lay it out to take up the left 1/2 of the container.
         </p>
       </div>
     </main>
